@@ -1,0 +1,195 @@
+*{
+    font-family: sans-serif;
+}
+/* navsection */
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    background-color: lightslategray;
+}
+/* 2nd nav section */
+.ride{
+    margin-left: 40px;
+   font-weight: bold;
+   margin-top: 20px;
+}
+#request{
+    color: darkgrey
+}
+#request:hover{
+    color: black;
+    background-color: white;
+}
+
+/* section1 */
+.later,.add,.example,.example1{
+    margin-left: 70px;
+}
+.later{
+    margin-bottom: 10px;
+}
+.example,.example1{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+   
+}
+.sub{
+    margin-left: 70px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+.sub1{
+    margin-left: 20px;
+}
+
+.sub,.sub1{
+    border: none;
+   border-radius: 10px;
+   height: 50px;
+
+}
+/* section2 */
+.suggest,.go{
+    margin-left: 100px;
+}
+.go{
+    margin-right: 30px;
+}
+.reserve{
+    margin-top: 1px;
+}
+.car{
+   position: absolute;
+   margin-top: 700px;
+   left: 320px;
+   top:100px
+  
+}
+.img6{
+    position: absolute;
+    margin-top: 700px;
+    left: 800px;
+    top:150px
+}
+.reserve,.go{
+    border: 2px solid gray;
+    width: 400px;
+    border: none;
+    background-color: whitesmoke;
+    
+}
+.detail{
+    margin-bottom: 30px;
+}
+.detail:hover{
+    background-color: lightgray;
+}
+/* section3 */
+.one{
+   margin-left: 90px;
+}
+.one,.two,.three{
+    margin-top: 30px;
+}
+.most{
+    background-color: black;
+    
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+.most a{
+    text-decoration: none;
+    color: white;
+}
+.most:hover{
+   background-color: lightslategray;
+}
+.business{
+    height: 500px;
+}
+.look{
+    padding-top: 40px;
+    
+}
+.look,.get,.travel{
+    padding-left: 70px;
+    color: white;
+}
+.start{
+    margin-left: 70px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+   border-radius: 20px;
+   height: 40px;
+}
+.can {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 0;
+    margin-left: 30px;
+    font-weight: bold;
+  }
+  
+  .deta {
+    width: 100px;
+    border: none;
+  }
+  .app{
+    margin-left: 80px;
+  }
+  .footer{
+    margin-left: 10px;
+  
+}
+@media screen and (max-width: 600px)  {
+   .reserve{
+    
+    margin-top: 30px;
+    margin-left: 100px;
+   }
+    .img3{
+        margin-left: 20px;
+    }
+    
+    .car{
+        position: absolute;
+        margin-top: 700px;
+        left: 240px;
+        top:350px;
+       }
+       .img6{
+        position: absolute;
+        margin-top: 700px;
+        left: 600px;
+        top:380px;
+       }
+       .just{
+        margin-left: 40px;
+       }
+       
+       .one,.two,.three{
+        margin-left: 100px;
+       }
+       .girl{
+        width: 200%;
+       }
+}
+
+
+  
+
+

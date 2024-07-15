@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <!-- favicon -->
+       <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIP.BBJ2Piv4sfpYJRdbvVd6xAHaFj?w=231&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+       
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- navsection -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid bg-black">
+        <a style="color: white;" class="navbar-brand " href="#">Uber</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a style="color: white;" class="nav-link active" aria-current="page" href="#">Ride</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Drive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About us</a></li>
+                <li><a class="dropdown-item" href="#">Our offerings</a></li>
+                <li><a class="dropdown-item" href="#">How uber works</a></li>
+                <li><a class="dropdown-item" href="#">Impact</a></li>
+                <li><a class="dropdown-item" href="#">Diversity,equity, and inclusion</a></li>
+                <li><a class="dropdown-item" href="#">Sustainability</a></li>
+                <li><a class="dropdown-item" href="#">Explore</a></li>
+                <li><a class="dropdown-item" href="#">Newsroom</a></li>
+                <li><a class="dropdown-item" href="#">Investor relations</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+              </ul>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a style="color: white;" class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-globe"></i> EN</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: white;" class="nav-link" href="#">Help</a>
+              </li>
+              <li class="nav-item">
+                <a  style="color: white;" class="nav-link" href="#">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: black; border: 2px solid white; background-color: white; border-radius: 10px;" class="nav-link hello " href="#">Sign Up</a>
+              </li>
+            </ul>
+             
+          </span>
+        </div>
+       </div>
+    </nav>
+  <!-- 2nd nav section -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" >
+    <h4 class="ride">Ride</h4>
+      
+    <span class="navbar-text">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a  class="nav-link active " aria-current="page" href="#" id="request" >Request a ride</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" href="#"id="request" >Reserve a ride</a>
+        </li>
+        <li class="nav-item">
+          <a   class="nav-link " href="#"id="request" >See prices</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link " href="#" id="request">Explore ride options</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link " href="#"id="request">Airport rides</a>
+        </li>
+       
+      </ul>
+       
+    </span>
+    </div>
+  </nav>
+  <!-- section1 -->
+   <section id="sec1"></section>
+   <div class="row">
+    <div class="col-sm-6">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="later"><b>Request a ride for <br>   now or later</b></h1>
+      <p class="add">Add your trip details, hop in, and go.</p>
+      <form>
+        <div class="mb-3">
+       
+        <input class="example" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder = " Enter location"> <br> <br>
+       <input class="example1" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter destination"><br>
+       <button class="sub" type="submit">See prices</button>
+       <button class="sub1" type="submit">Schedule for later</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_789,h_789/v1683919251/assets/42/a29147-e043-42f9-8544-ecfffe0532e9/original/travel-ilustra.png" alt="img1" width="450px" style="margin-right: 30px;" class="img3">
+    </div>
+   </div>
+   <!-- section2 -->
+    <section id="sec2">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="suggest"><b>Suggestions</b></h1>
+      <div class="row">
+        <div class="col-lg-4 go">
+          <img class="car" src="https://mobile-content.uber.com/launch-experience/ride.png" alt="car">
+          <br>
+          <br>
+          <h6>Ride</h6>
+          <p>Go anywhere with Uber.Request <br> a ride ,hop in,and go </p> 
+         <button class="detail" style="border-radius: 10px; border: none; width: 60px;">Details</button>
+        </div>
+        <div class="col-lg-4 reserve" >
+          <img class="img6" src="https://mobile-content.uber.com/uber_reserve/reserve_clock.png" alt="car" width="110px">
+          <br>
+          <br>
+          <h6>Reserve</h6>
+          <p>Reserve your ride in advance so you  can <br>relax  on the day of your  trip. <img src="" alt=""></p>
+          <button class="detail" style="border-radius: 10px; border: none; width: 60px;">Details</button>
+        </div>
+      </div>
+      
+    </section>
+    <!-- section 3 -->
+     <section id="sec3">
+      <br>
+      <br>
+      <br>
+       <div class="row">
+        <div class="col-lg-2 upload">
+          <img  src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_789,h_444/v1683576635/assets/f7/7aa380-a378-47bf-8b88-aaba1587efdd/original/landing-stops-group-rides.png" alt="img" width="500px" >
+        </div>
+        <div class="col-lg-4"> </div>
+        <div class="col-lg-4 just">
+          <h3><b>Ride with friends <br>seamlessly</b></h3>
+          <p>Riding with friends just got easier: set up a group ride in the Uber app, invite your friends, and arrive at your destination. Friends who ride together save together.</p>
+          <br>
+          <a style="color: black;" href="">Learn more</a>
+        </div>
+        <div class="col-lg-8"></div>
+       </div>
+     </section>
+     <!-- section4 -->
+      <section id="sec4">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+     <h1 style="margin-left: 95px;"><b>Use the Uber app to help you travel your <br> way</b></h1>
+     <div class="row">
+      <div class="col-sm-3 one">
+        <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_509,h_509/v1692743834/assets/54/f60161-cf6b-4401-a309-8bb196c0014c/original/U_CoastalCalifornia_White_Final-%281%29.jpg" alt="" width="100%" height="70%">
+         <h6 style="margin-top: 20px;"><b >Ride options</b></h6>
+        <p>There’s more than one way to move with Uber, no matter where you are or where you’re headed next.</p>
+        <button class="most"><a href="">Search ride options</a></button>
+      </div>
+      <div class="col-sm-3 two">
+        <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_509,h_509/v1692743890/assets/f9/ba27c4-665c-4cca-8161-9e3f87f49994/original/Airport-rides.png" alt="" width="100%" height="70%">
+        <h6 style="margin-top: 20px;"><b>700+ airportss</b></h6> 
+        <p>You can request a ride to and from most major airports. Schedule a ride to the airport for one less thing to worry about.</p>
+        <button class="most"><a href="">Search airports</a></button>
+      </div>
+      <div class="col-sm-3 three">
+        <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_509,h_509/v1689609697/assets/b8/c39de0-6e13-485b-ba45-66511170c62a/original/SS_Commuter.jpg" alt="" width="100%" height="70%">
+        <h6 style="margin-top: 20px;"><b>10,000+ cities</b></h6>
+        <p>The app is available in thousands of cities worldwide, so you can request a ride even when you’re far from home.</p>
+        <button class="most"><a href="">Search cities</a></button>
+      </div>
+     </div>
+      </section>
+      <!-- section4 -->
+       <section id="4">
+        <div class="row girl " style="background-color: black; margin-top: 90px;">
+          <div class="col-sm-4 business">
+           <h3 class="look">Looking for business solutions?</h3>
+           <p class="get">Get information about how companies leverage <a style="color: white;" href="">Uber  for Business:</a></p>
+           <ul class="travel">
+            <li><a style="color: white;"  href="">Business travel</a></li>
+            <li><a  style="color: white;"href="">Courtesy rides</a></li>
+            <li><a style="color: white;" href="">Meal Programs</a></li>
+            <li><a style="color: white;" href="">Item delivery</a></li>
+          </ul>
+          <br>
+          <button class="start"><a href="" style="text-decoration: none; color: black;">Get started</a></button>&nbsp; &nbsp;<a style="color: white; " href="">Check out our solutions</a>
+        </div>
+          <div class="col-sm-4 business">
+            <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_789,h_444/v1691776332/assets/d6/48f5b6-bb5f-450e-8733-90aefecbd09e/original/U4B_Spot_U4BWebsite.jpg" alt="" width="550px" style="margin-top: 50px; margin-left: 200px;">
+          </div>
+        </div>
+       </section>
+       <!-- section 5 -->
+        <section id="section5">
+          <br>
+          <br>
+          <br>
+        <h1 style="margin-left: 50px;"><b>Frequently asked questions</b></h1>
+        <br>
+        <br>
+       
+        <p class="can">
+          <a class="btn-link" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" href="" class="can" style="text-decoration: none; color: black; ">Can I have a lost item delivered to me? </a>
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            The Uber app helps provide a delivery solution that can save you a trip across town, whether it’s for a last-minute birthday gift or your forgotten keys. Just choose Package in the Uber app.
+            <button class="deta">Get details</button>
+          </div>
+        </div>
+        <hr>
+        <p class="can">
+          <a class="btn-link" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample" href="" class="can"  style="text-decoration: none; color: black;">Can I rent a car using Uber?</a>
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample1">
+          <div class="card card-body">
+            Yes. Find out more about how car rentals work.
+           
+          </div>
+        </div>
+        <hr>
+        <p class="can">
+          <a class="btn-link" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" href="" class="can"  style="text-decoration: none; color: black;">Can I request a ride that picks up friends in different locations?</a>
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body">
+            Yes. Set up a group ride in the Uber app, invite your friends, and arrive at your destination together.
+            <button class="deta">Learn more</button>
+          </div>
+        </div>
+        <hr>
+        <p class="can">
+          <a  class="btn-link"data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample" href="" class="can"  style="text-decoration: none; color: black;">Can I request a taxi on Uber?</a>
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample3">
+          <div class="card card-body">
+            Uber makes it easy to get a taxi nearby in the cities where Uber Taxi is available. There’s no need to find a cab stand, hail a cab on the street, or even call the local cab company. Instead, you can use the Uber app or website to request a taxi in just a few taps or clicks.
+            <button class="deta">Learn about requesting a taxi</button>
+          </div>
+        </div>
+        <hr>
+        <p class="can">
+          <a data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn-link" style="text-decoration: none; color: black;">
+            Is there an Uber ride option for 5 people?
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample4">
+          <div class="card card-body">
+            Request UberXL for a van or SUV that fits up to 6 people at an affordable price. It’s perfect for a family trip or a ride to the airport.
+            <button class="deta">Get details about UberXL</button>
+          </div>
+        </div>
+        <hr>
+      </section>
+      <!-- section6 -->
+       <section id="section6">
+        <br>
+        <br>
+        <br>
+        <div class="row" style="background-color: azure;">
+          <div class="col-sm-4">
+            <h3 class="app"><b>Do more in the app</b></h3>
+            <br>
+            <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_225,h_225/v1690807720/assets/a5/9986ad-0d9f-4396-8539-389bce97f579/original/Final-Download-Uber-App.png" alt="" class="app" width="150px">
+            <a style="text-decoration: none; color: black; font-size: 15px;" href=""><b>Download Uber app</b> </a>
+            </div>
+        </div>
+       </section>
+       <!-- section7 -->
+        <section id="section7">
+          <br>
+          <br>
+          <br>
+          <h3 style="margin-left: 60px;"><b>Sign up to ride &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></b></h3>
+          <hr>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="color: grey; margin-left: 50px;">Certain requirements and features vary by country, region, and city.</p>
+        </section>
+       
+<!-- Footer -->
+<div class="container-fluid  mt-5" style="background-color: black; color: white; width: 100%;">
+  <h1>Uber</h1>
+  <br>
+ <h6>Visit Help Center</h6>
+
+<div class="row mt-5">
+  <div class="col-md-3">
+      
+      <h4>Company</h4>
+    <ul class="list-unstyled">
+      <br>
+      <li>About us</li>
+      <br>
+      <li>Our offerings</li>
+      <br>
+      <li>Newsroom</li>
+      <br>
+      <li>Investors</li>
+      <br>
+      <li>Blog</li>
+      <br>
+      <li>Careers</li>
+      <br>
+      <li>AI</li>
+      <br>
+      <li>Giftcards</li>
+      <br>
+    </ul>
+  </div>
+  <div class="col-md-3">
+    <h4>Products</h4>
+    <ul class="list-unstyled">
+      <li>Ride</li>
+      <br>
+      <li>Drive</li>
+      <br>
+      <li>Deliver</li><br>
+      <li>Uber for Business</li><br>
+      <li>Uber Freight</li><br>
+    </ul>
+  </div>
+  <div class="col-md-3">
+    <h4>Global citizenship</h4>
+    <ul class="list-unstyled">
+      <li>Safety</li><br>
+      <li>Diversity and Inclusion</li><br>
+      <li>Sustainability</li><br>
+    </ul>
+  </div>
+  <div class="col-md-3">
+    <h4>Travel</h4>
+    <ul class="list-unstyled">
+      <li>Reserve</li><br>
+      <li>Airports</li><br>
+      <li>Cities</li><br>
+     
+    </ul>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class=" ">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a  data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i style="color: white; margin-left: 20px;" class="fab fa-facebook-f"></i
+      ></a>
+
+     
+      <a  data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"></a>
+        <i style="color: white; margin-left: 10px;" class="fa-solid fa-x"></i>
+      </a>
+
+      <!-- Youtube -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i style="color: white; margin-left: 20px;" class="fa-brands fa-youtube"></i>
+      </a>
+
+     <!-- Linkedin -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i style="color: white; margin-left: 20px;" class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i style="color: white; margin-left: 20px;" class="fab fa-github"></i
+      ></a>
+      <a style="color: white; margin-left: 280px; text-decoration: none;" href=""><i class="fa-solid fa-globe"></i>English  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-location-dot"></i>Thiruvananthapuram</a>
+     <br>
+     <br>
+     <a href=""><img src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-google-4d63c31a3e.svg" alt="" width="150px" style="margin-left: 10px;"></a>
+     <a href=""><img src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-apple-f1f919205b.svg" alt="" width="150px" style="margin-left: 10px;"></a>
+     <br>
+     <br>
+     <a  style="color: white; margin-left: 700px; text-decoration: none;" href="">Privacy &nbsp;&nbsp;&nbsp;&nbsp;Accessibility &nbsp;&nbsp;&nbsp;&nbsp;Terms</a>
+    </section>
+  </div>
+
+
+
+</body> 
+</html>
